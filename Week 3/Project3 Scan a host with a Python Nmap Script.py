@@ -13,20 +13,20 @@ class PortScanner:
         # Run the scan
         self.scanner.scan(hosts=host, arguments=f"--top-ports {top_ports} -Pn")
 
-        for host in self.scanner.all_hosts():
-            print(f"Nmap scan report for {host}")
-            print(f"Host is {self.scanner[host].state()}\n")
+        for h in self.scanner.all_hosts():
+            print(f"Nmap scan report for {h}")
+            print(f"Host state {self.scanner[h].state()}\n")
 
-            for proto in self.scanner[host].all_protocols():
-                ports = sorted(self.scanner[host][proto].keys())
+            for p in self.scanner[h].all_protocols():
+                ports = sorted(self.scanner[h][p].keys())
                 for port in ports:
-                    state = self.scanner[host][proto][port]["state"]
-                    service = self.scanner[host][proto][port].get("name", "unknown")
+                    state = self.scanner[h][p][port]["state"]
+                    service = self.scanner[h][p][port].get("name", "unknown")
 
                     if show_only_open and state != "open":
                         continue  # skip non-open ports if user requested
 
-                    print(f"Port {port}/{proto}\t{state}\t{service}")
+                    print(f"Port {port}/{p}\t{state}\t{service}")
 
         print("\nScan complete!")
 
