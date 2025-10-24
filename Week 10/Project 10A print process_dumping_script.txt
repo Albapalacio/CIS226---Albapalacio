@@ -1,0 +1,36 @@
+PS C:\Users\Alba Palacio> & "C:/Users/Alba Palacio/anaconda3/python.exe" "c:/Users/Alba Palacio/Desktop/CYBERSECURITY/Python 2/Week 10/process_dumping_script.py"
+Printing all the PIDs:
+[0, 4, 176, 472, 580, 620, 696, 712, 880, 884, 888, 1008, 1068, 1076, 1116, 1228, 1268, 1276, 1320, 1400, 1460, 1540, 1628, 1648, 1660, 1676, 1748, 1756, 1860, 1912, 1920, 1932, 2032, 2052, 2200, 2268, 2288, 2376, 2408, 2464, 2468, 2472, 2496, 2608, 2632, 2652, 2736, 2772, 2788, 2796, 2804, 2908, 2948, 2984, 2992, 3068, 3216, 3228, 3264, 3312, 3384, 3448, 3504, 3508, 3584, 3612, 3668, 3680, 3788, 3904, 3936, 3948, 4012, 4036, 4056, 4072, 4088, 4264, 4268, 4276, 4308, 4468, 4476, 4484, 4492, 4500, 4512, 4524, 4532, 4564, 4580, 4588, 4600, 4660, 4760, 4820, 4832, 4864, 4944, 4976, 5028, 5044, 5060, 5072, 5076, 5100, 5172, 5228, 5236, 5432, 5488, 5500, 6240, 6612, 6616, 6896, 7280, 7488, 7516, 7616, 7624, 7684, 7908, 8016, 8168, 8208, 8268, 8568, 8576, 8620, 8716, 8812, 8820, 8856, 9364, 9620, 9764, 9932, 10012, 10036, 10176, 10252, 10584, 10604, 10636, 10704, 10900, 11040, 11112, 11148, 11164, 11232, 11244, 11564, 11712, 11844, 12320, 12584, 12596, 12604, 12692, 12712, 12776, 12828, 12880, 12976, 12984, 13044, 13292, 13348, 13384, 13396, 13504, 13636, 13776, 14008, 14088, 14144, 14880, 15096, 15152, 15312, 15448, 15552, 15568, 15704, 16076, 16116, 16204, 16328, 16332, 16396, 16516, 16688, 16692, 17216, 17484, 17536, 17912, 18024, 18184, 18240, 18368, 18376, 18428, 18508, 18876, 18924, 18936, 18964, 19024, 19176, 19408, 19608, 19776, 19848, 19884, 19944, 20024, 20492, 20572, 20688, 20700, 20728, 20732, 21260]
+
+Printing details about a randomly selected process:
+Process Id (PID): 14144
+
+==== Process basic details ====
+
+--- Process name:  Code.exe
+
+--- Process status:  running
+
+--- Process username (started as):  LAPTOP-OCR07D86\Alba Palacio
+
+--- Process created at:  1760999824.6689613
+
+--- Process executable:  C:\Users\Alba Palacio\AppData\Local\Programs\Microsoft VS Code\Code.exe
+
+--- Process working directory:  C:\Users\Alba Palacio\AppData\Local\Programs\Microsoft VS Code
+
+--- Process command line:  ['C:\\Users\\Alba Palacio\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe', '--type=utility', '--utility-sub-type=node.mojom.NodeService', '--lang=en-US', '--service-sandbox-type=none', '--video-capture-use-gpu-memory-buffer', '--user-data-dir=C:\\Users\\Alba Palacio\\AppData\\Roaming\\Code', '--standard-schemes=vscode-webview,vscode-file', '--enable-sandbox', '--secure-schemes=vscode-webview,vscode-file', '--cors-schemes=vscode-webview,vscode-file', '--fetch-schemes=vscode-webview,vscode-file', '--service-worker-schemes=vscode-webview', '--code-cache-schemes=vscode-webview,vscode-file', '--field-trial-handle=1716,i,10366080546371504644,2378697864622419643,262144', '--enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EnableTransparentHwndEnlargement,EstablishGpuChannelAsync', '--disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess,WinDelaySpellcheckServiceInit', '--variations-seed-version', '--mojo-platform-channel-handle=3652', '/prefetch:14']
+
+--- Process children:  []
+
+--- Process parent:  psutil.Process(pid=2288, name='Code.exe', status='running', started='15:37:01')
+
+=== Process memory and CPU information ===
+
+--- Process CPU percent:  0.0
+
+--- Process CPU times (accumulated CPU time):  pcputimes(user=1.734375, system=0.96875, children_user=0.0, children_system=0.0)
+
+--- Process memory percent:  0.3057815675538052
+
+--- Process memory info:  pmem(rss=19529728, vms=79155200, num_page_faults=31599, peak_wset=107716608, wset=19529728, peak_paged_pool=629464, paged_pool=621240, peak_nonpaged_pool=160264, nonpaged_pool=29480, pagefile=79155200, peak_pagefile=79847424, private=79155200)
