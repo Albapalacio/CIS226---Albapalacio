@@ -1,0 +1,13 @@
+WARNING: Wireshark is installed, but cannot read manuf !
+[2025-10-30 17:06:26] Sending 1 crafted packet to 52.234.30.228:8000
+.
+Sent 1 packets.
+Sent 1 packet.
+
+--- Payload sent ---
+
+GET /index.html HTTP/1.1
+Host: 52.234.30.228
+User-Agent: ScapyTest/1.0
+Accept: */*
+Custom-Payload: This is a payload for the assignment
